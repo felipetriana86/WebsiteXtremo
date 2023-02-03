@@ -1,0 +1,111 @@
+<!DOCTYPE html>     
+<!-- Felipe, Triana
+     Description: Project
+	 Date: July 2021        -->
+<html lang="en"> 
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+   <title>Home</title>
+ 
+   <style>
+   h1 { text-shadow: 1px 1px 2px white, 0 0 20px white, 0 0 5px darkblue; text-align:center ; color:white}
+   
+   label {color:white}
+   .logo {box-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 5px darkblue}
+ .box{	
+	float:left;	width:33.3%;padding:10px;text-align:center;box-sizing:border-box;}
+
+.box img{
+	height:110px;}
+	
+	.box6{	
+	float:left;	width:16.0%;text-align:center;box-sizing:border-box;}
+
+	.box6 img{
+	height:140px;}
+
+
+.container{ 
+	width:100%;margin:auto;overflow:hidden;}
+.options{float:left}
+#nav ul{
+	float:right;
+	padding:1px 0;
+	list-style:none;
+}
+
+#nav ul li{
+	display:inline; 
+}
+
+#nav ul li a{
+	
+	text-decoration:none;
+	font-size:25px;
+	
+	padding-right:35px;padding-left:35px;
+	text-shadow: 1px 1px 2px black, 0px 0 20px black, 0 0 5px darkblue; text-align:center ; 
+	
+}
+		a:link { color: white}
+		a:visited {color: white;background-color: transparent; text-decoration: none;}
+		a:hover {color: darkblue; background-color: transparent; text-decoration: underline;}
+        a:active {color: blue; background-color: transparent; text-decoration: underline;}
+		
+.date{font-size:25px}
+   </style>
+   
+ </head>
+ <body style="background-image: url(../img/xcontent.jpg);  background-repeat: no-repeat; height:10%; background-size: cover;">
+			<h1>WELCOME</h1>
+			<label id="demo" class="date"></label><br>
+			<label id="demo1" class="date"></label>
+			<br><br>
+			
+			<br><br><br><br><br><br><br><br><br><br><br>
+			<div id="nav">
+				<ul>
+						
+						<li><a href="./AboutUs.html" target="Content_Frame">About us </a></li>
+						<li><a href="./Equipment.html" target="Content_Frame">Equipment </a></li>
+						<li><a href="./ContactUs.html" target="Content_Frame">Contact us </a></li>
+						<li><a href="./Search.html" target="Content_Frame">X-Search </a></li>
+						<li><a href="./Premium.html" target="Content_Frame">Premium</a></li>
+						<li><a href="./References.html" target="Content_Frame">References</a></li>
+						
+				</ul>
+			</div>
+			<br><br><br><br><br>
+			<div class="container">
+				<div class="box6">
+					<img src="../img/watergif1.gif" alt="watersport">
+				</div>
+				<div class="box6">
+					<img src="../img/airgif1.gif" alt="airsport">
+				</div>
+				<div class="box6">
+					<img src="../img/snowgif1.gif" alt="snowsport">
+				</div>
+				<div class="box6">
+					<img src="../img/watergif2.gif" alt="watersport">
+				</div>
+				<div class="box6">
+					<img src="../img/airgif2.gif" alt="airsport">
+				</div>
+				<div class="box6">
+					<img src="../img/snowgif2.gif" alt="snowsport">
+				</div>
+  
+  
+  
+			</div>
+	  <script>
+		const d = new Date();
+		document.getElementById("demo").innerHTML = d.toDateString();
+		document.getElementById("demo1").innerHTML = d.toLocaleTimeString();
+	  </script>
+			
+ 
+		
+ </body>
+</html>

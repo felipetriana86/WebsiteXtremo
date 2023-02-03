@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMIUM USER INFO</title>
+	<style>
+	body{margin:0; padding:0; font-family:sans-serif; background-image: url(../img/newform1.jpg);  background-repeat: no-repeat;  background-size: cover;}
+	.box {
+		width:320px; padding:30px; position:absolute; top:50%; left:50%; 
+		transform: translate(-50%,-50%); background-color:black;background-image: linear-gradient(black, darkblue); opacity: 0.6;}
+	.box h1{color:white; font-weight:500}
+	.innerbox{
+		border:0; background:none; display:block; margin: 20px auto; 
+		text-align:center; border: 2px solid blue; padding: 14px 10px; width:200px; 
+		outline:none; color:white; border-radius: 24px; transition: 0.25s;}
+	.innerbox:focus{ width: 280px; border-color: green;}
+	.box input[type="submit"]
+		{border:0; background:none; display:block; margin: 20px auto; 
+		text-align:center; border: 2px solid #3498db; padding: 14px 40px;
+		outline:none; color:white; border-radius:24px; transition: 0.25s;cursor:pointer;}
+	h1, h2 ,td { color:white; text-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 5px darkblue;font-family:serif}
+   h1::first-letter{ font-size: 150%;   color: red; }
+	.box input[type="submit"]:hover{background: blue}
+  </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function openPage(){
+	location.href ="./Premium.html";
+        }
+		
+    function loadCookie(){
+    var firstname = getCookie("firstname");
+    var lastname = getCookie("lastname");
+    var username = getCookie("username");
+    var email = getCookie("email");
+    var password = getCookie("password");
+    var phoneNumber = getCookie("phoneNumber");
+    var country = getCookie("country");
+    var province = getCookie("province");
+     var City = getCookie("City");
+	  var Address = getCookie("Address");
+	   
+	 
+    
+	if(Address != "" || City != "" || province != "" || country != "" || phoneNumber != "" || password != "" || email != "" || username != "" || lastname != "" || firstname){
+		alert("load cookie ok");
+	    document.getElementById("firstname").innerHTML = firstname;
+        document.getElementById("lastname").innerHTML = lastname;
+        document.getElementById("username").innerHTML = username;
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("password").innerHTML = password;
+        document.getElementById("phoneNumber").innerHTML = phoneNumber;
+        document.getElementById("country").innerHTML = country;
+        document.getElementById("province").innerHTML = province;
+        document.getElementById("City").innerHTML = City;
+		document.getElementById("Address").innerHTML = Address;
+		
+	
+	}
+	else{		
+	alert("load cookie not ok");
+	}
+    }
+
+    function getCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	//alert("document.cookie:"+document.cookie+"\nfirst cookie:"+ca[0]+
+	//"\nsecond cookie:"+ca[1]+"\nthird cookie:"+ca[2]);
+
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		//                'cname=' != ' cname='
+		while (c.charAt(0)==' ') c = c.substring(1);
+		
+		if (c.indexOf(nameEQ) != -1) {
+		//alert("val of c:"+c+"\nval of nameEQ:"+nameEQ);
+		//alert("Substring:"+c.substring(nameEQ.length,c.length));
+		//alert("nameEQ="+nameEQ+"\nc="+c+"\nnameEQ.length="+nameEQ.length+"\nc.length="+c.length+"\nc.substring(nameEQ.length,c.length)="+c.substring(nameEQ.length,c.length));
+		return c.substring(nameEQ.length,c.length);
+		// c ='cname=val1'
+        //name.length = 6    
+        //c.length =    10
+		}
+	}
+	return null;
+} 
+    </script>
+</head>
+<body onload="loadCookie()">
+    <span id="username222"></span>
+<h1 style="text-align:center; color:white">Xtremo</h1>   
+<h2 style="text-align:center; color:white">PREMIUM User Information</h2>
+   <table class="box">	
+	
+      				
+        <tr id="r02">
+            <td><div>First name:</div></td>
+            <td><div><span id="firstname"></span></div></td>
+        </tr>
+        <tr id="r03">
+            <td><div>Last name:</div></td>
+            <td><div><span id="lastname"></span></div></td>
+        </tr>
+        <tr id="r04">
+            <td><div>User name:</div></td>
+            <td><div><span id="username"></span></div></td>
+        </tr>
+        <tr id="r05">
+            <td><div>Email:</div></td>
+            <td><div><span id="email"></span></div></td>
+        </tr>
+        <tr id="r06">
+            <td><div>Password:</div></td>
+            <td><div><span id="password"></span></div></td>
+        </tr>
+        <tr id="r07">
+            <td><div>Phone Number:</div></td>
+            <td><div><span id="phoneNumber"></span></div></td>
+        </tr>
+        <tr id="r08">
+            <td><div>Country:</div></td>
+            <td><div><span id="country"></span></div></td>
+        </tr>
+        <tr id="r9">
+            <td><div>Province:</div></td>
+            <td><div><span id="province"></span></div></td>
+        </tr>
+        <tr id="r10">
+            <td><div>City:</div></td>
+            <td><div><span id="City"></span></div></td>
+        </tr>
+		<tr id="r11">
+            <td><div>Address:</div></td>
+            <td><div><span id="Address"></span></div></td>
+        </tr>
+		<tr>
+			<td><input type="button" style="text-align:center" value="Go back" onClick="openPage()" />
+			</td>	
+		</tr>
+		
+</table>
+    
+</body>
+</html>

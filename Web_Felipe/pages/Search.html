@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<!-- Felipe, Triana
+     Description: Project
+	 Date: July 2021        -->
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Xtremo Search</title>
+		<style>
+			.dimensions{width:100%; height:140px;}
+		</style>
+		
+		<link rel="stylesheet" type="text/css" href="../css/stylesSearch.css">
+		<script>  
+    	  
+     function searchTypeLoop()
+	 { 
+	   var arrName = ['tandem','static-line','freefall','slalom','jump','trick','jibbing','freeriding','freestyle'];
+	   var arrDetails = ['Tandem Skydiving is popular among first time jumpers looking to experience the thrill of skydiving. Offering an introduction to the sport, Tandem Skydiving will allow jumpers to free-fall for 30 seconds while securely harnessed to one of our trained instructors. The tandem instructor will allow you to keep track of the jump using your own altimeter and let you pull the ripcord to release the parachute (of course, your instructor will back you up). Tandem Skydiving requires minimal ground preparation, but you should expect to be at our skydiving center for half the day. Come fall in love with skydiving by scheduling your tandem jump today.',
+						'For those looking to solo jump on their first day, consider the Static Line Jump. The jump itself consists of a simple poised exit from the airplane. As the skydiver falls away from the plane, the deployment of the main canopy is initiated by a “static line” attached to the aircraft. The skydiver will experience only a very short free fall before the opening of the main parachute is initiated. You will be required to go through Ground School for 4-5 hours before your jump so plan to be at our skydiving center all day. Ground School Training will be held rain or shine. Come solo jump via a static line! Schedule your jump online today!',
+						'If you are looking to be on the fast track to becoming a skydiver, Accelerated Freefall (AFF) is for you! The training for AFF is extensive, but you will experience a 50 second free-fall on your first jump! Plan to be at our skydiving center all day as we prepare you for an incredible experience. On your first AFF jump you exit from the airplane with two USPA AFF Instructors. On your first jump the instructors maintain a grip on your harness and give you in-air instruction via hand signals and assist with stability when necessary. You will open the parachute around 5,500 feet and another instructor on the ground will assist you in piloting the parachute via verbal guidance through a radio mounted in your helmet. If you are looking for serious fun try an Accelerated Freefall!',
+						'In an attempt to become as agile as possible, slalom water skiers use only one ski with feet oriented forward, one in front of the other. Slalom skis are narrow and long, at 57–70 inches (145–178 cm) depending on the height and weight of the skier. The two forward-facing bindings vary: they can be made of rubber or thick plastic, and they can be designed more like a snow ski binding or more like a roller blade boot.',
+						'Water ski jumpers use two long skis to ride over a water ski jump in an attempt to travel the longest distance. In a tournament, skiers are given three attempts to hit the ramp. The winner is the skier who travels the farthest calculated distance and successfully rides away. There are no style points, simply distance. Water ski jumps have specific dimensions and the ramp height is adjustable. Skiers may choose their boat speed and ramp height, although there are maximums based the skiers gender and age. Professional ski jumpers have a maximum boat speed of 58 km/h (36 mph; 31 kn). The ramp height must be between 1.5 and 1.8 m (5 and 6 ft). As a professional jumper approaches the ramp they will zigzag behind the boat in a series of cuts to generate speed and angle. ',
+						'The Trick competition has been described as the most technical of the three classic water skiing events. Trick skiing uses small, oval-shaped or oblong water skis. Beginners generally use two skis while more advanced skiers use one. The shorter, wider Trick ski has a front binding facing forward and a back binding facing at a 45°. It has a smooth bottom that allows it to turn over the surface of the water. According to official 2013 Tournament Rules for 3-event competition in the United States and the Pan-Am Games, skis used in the Tricks event must be a single ski without fins, although molded rails/grooves less than 6.4 mm (1⁄4 in) are allowed, as are a foot pad cemented to the ski as a place for the rear foot; in addition, the ski must float with all bindings, fins, etc., installed.',
+						'"Jibbing" is the term for technical riding on non-standard surfaces, which usually includes performing tricks. The word "jib" is both a noun and a verb, depending on the usage of the word. As a noun: a jib includes metal rails, boxes, benches, concrete ledges, walls, vehicles, rocks and logs. As a verb: to jib is referring to the action of jumping, sliding or riding on top of objects other than snow. It is directly influenced by grinding a skateboard. Jibbing is a freestyle snowboarding technique of riding. Typically jibbing occurs in a snowboard resort park but can also be done in urban environments.',
+						'Freeriding is a style without a set of governing rules or set course, typically on natural, un-groomed terrain. The basic allows for various snowboarding styles in a fluid motion and spontaneity through naturally rugged terrain. It can be similar to freestyle with the exception that no man-made features are utilized.  ',
+						'Freestyle snowboarding is any riding that includes performing tricks. In freestyle, the rider utilizes natural and man-made features such as rails, jumps, boxes, and innumerable others to perform tricks. It is a popular all-inclusive concept that distinguishes the creative aspects of snowboarding, in contrast to a style like alpine snowboarding.'];
+	   var arrImages = ["../Img/tandem.jpg","../Img/Static_Line.jpg","../Img/freefall.jpg","../Img/slalom.jpg","../Img/jump.jpg","../Img/trick.jpg","../Img/jibbing.jpg","../Img/freeriding.jpg","../Img/freestyle.jpg"];
+	   var pn = document.getElementById("ptextbox").value.toLowerCase(); 
+	   var index = 10;
+	
+		for (i = 0; i < 9; i++)
+		{ 
+		 if (pn == arrName[i])
+		     { index = i; }
+		}
+
+      if (index >= 0 && index <=8){
+	       document.getElementById("pname").innerHTML = arrName[index].toUpperCase();
+           document.getElementById("pimg").src = arrImages[index];
+	       document.getElementById("pdetail").innerHTML = arrDetails[index] ;		 
+	       }
+      
+	      else
+		  {
+		      alert('Unknown Style, please type one from the list');
+		      document.getElementById("pname").innerHTML = "";
+			  document.getElementById("pimg").src = "";
+			  document.getElementById("pdetail").innerHTML = "" ;
+	      }  
+	 }
+
+   </script>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container" id="top">
+				<h1 style="text-align:center; color:white">X - Search</h1>
+			</div>
+		</header>
+		<!-- nav bar -->
+		<nav>
+			<div class="container">
+				<ul>
+					<li><a href="./Home.html">Home</a></li>
+					<li><a href="./AboutUs.html">About Us</a></li>
+					<li><a href="./Equipment.html">Equipment</a></li>
+					<li><a href="./ContactUs.html">Contact Us</a></li>
+					<li><a href="./Search.html">X-Search</a></li>
+					<li><a href="./Premium.html">Premium</a></li>
+					<li><a href="./References.html">References</a></li>
+					
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="clr"></div>
+	
+		<div class="container" id="backg">
+		<main>
+			<h3>Think you want a dose of adrenaline? Well, look no further! These are the most extreme sports to have an amazing experience in Canada.</h3>
+			 
+			 <div>
+				<div class="box6">
+					<h2>Skidiving</h2>
+					<video autoplay loop muted  class="dimensions">
+					<source src="../img/vid1.mp4" type="video/mp4">
+					Please note: You need to update your browser in order to see the video.
+					</video>
+					<h3 class="arraylist">- Tandem</h3>
+					<h3 class="arraylist">- Static-Line</h3>
+					<h3 class="arraylist">- Freefall</h3>
+					
+				</div>
+				<div class="box6">
+					<h2>Snowboarding</h2>
+					<video autoplay loop muted  class="dimensions">
+					<source src="../img/vid2.mp4" type="video/mp4">
+					Please note: You need to update your browser in order to see the video.
+					</video>
+					<h3 class="arraylist">- Slalom</h3>
+					<h3 class="arraylist">- Jump</h3>
+					<h3 class="arraylist">- Trick</h3>
+				</div>
+				<div class="box6">
+					<h2>WaterSkiing</h2>
+					<video autoplay loop muted  class="dimensions">
+					<source src="../img/vid3.mp4" type="video/mp4">
+					Please note: You need to update your browser in order to see the video.
+					</video>
+					<h3 class="arraylist">- Jibbing</h3>
+					<h3 class="arraylist">- Freeriding</h3>
+					<h3 class="arraylist">- Freestyle</h3>
+				</div>
+				
+  
+  
+  
+			</div>
+			 
+	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<div>
+			<h2 style="text-align:left; color:white">Enter any style from the list to display the details below:</h2>
+		<input type="text" id="ptextbox"/>
+		<br />
+		<button type="button" onclick="searchTypeLoop()">Search</button>
+			<h1 id="pname">.</h1>
+			<section id="board" class="equip">
+				<div>
+					
+					<div class="eq" style=" width:35%">
+						<img class="seq" id="pimg" src="." alt="type" ><a href="#top" title="Go to the top" style="color:darkblue">Go to the top</a>
+					</div>
+					<div class="eq" style=" width:59%">
+						<h3 id="pdetail" style="color:white; padding:20px">.<br><br> 
+						
+						</h3>
+						
+					</div>	
+				</div>	
+			</section>
+			<br><br>
+			<br><br>
+			</div>
+		</main>
+		</div>
+		
+		<!-- services -->
+		<section id="boxes">
+			<div>
+				<div class="box">
+					<img src="../img/water1.png" alt="watersport">
+					<h3 class="footlinks" >Water Sports</h3>
+					<p>	Water Skiing is a surface water sport in which an individual is pulled behind a boat or a cable ski installation over a body of water, skimming the surface on two skis or one ski.  
+					</p>
+				</div>
+				<div class="box">
+					<img src="../img/air1.png" alt="airsport">
+					<h3 class="footlinks" >Skydiving</h3>
+					<p>	The descent of a person to the surface from an aircraft in flight when he or she uses or intends to use a parachute during all or part of that descent.
+					</p>
+				</div>
+				<div class="box">
+					<img src="../img/snow1.png" alt="snowsport">
+					<h3 class="footlinks" >Winter Sports</h3>
+					<p>	Snowboarding is a winter sport that involves descending a slope while standing on a board attached to a rider’s feet, using a special boot set onto a mounted binding.
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		<div id="footer">
+			<p>Copyright &copy; 2021- Designed by Felipe Triana</p>
+		</div>
+	
+	</body>
+
+
+</html>

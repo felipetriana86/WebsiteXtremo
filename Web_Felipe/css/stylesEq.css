@@ -1,0 +1,74 @@
+		
+
+body{ 
+	background-color: white; color:#555; font-family:Arial, Helvetica, sans-serif; font-size:16px; margin:0; }
+
+.container{ 
+	width:80%;margin:auto;overflow:hidden;}
+
+header{
+	background-color: black;  background-repeat: no-repeat; height:100%; background-size: cover; background-image: linear-gradient(black, #000033, black);}
+
+nav{
+	background-color: black; color:white; border-bottom:1px solid #000033; background-image: linear-gradient(black, black, black, #000033 ,black, black,black);}
+
+nav ul{	
+	padding:1px 0; list-style:none; }
+
+nav ul li{
+	display:inline;}
+
+nav ul li a{
+	color:#fff;text-decoration:none;font-size:17px;padding-right:15px;}
+
+main{
+	float:left;width: 100%;padding:0 30px;box-sizing:border-box;}
+
+#boxes{	
+	margin-top:30px;}
+
+.box{	
+	float:left;	width:33.3%;padding:10px;text-align:center;box-sizing:border-box;}
+
+.box img{
+	height:110px;}
+
+#footer{	
+	background-color:black; color:white; border-bottom:5px solid #00001a; background-image: linear-gradient(black, black, #000033 ,black, black,black);
+	text-align:center;padding:20px;}
+	
+h1{ 
+	color:white; text-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 5px darkblue;font-family:serif}
+
+.footlinks { 
+	color:white; text-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 5px darkblue;font-family:serif}
+
+h1::first-letter{ 
+	font-size: 150%;   color: darkred; }
+
+.subscribe:hover {
+	background-color: transparent; text-decoration: underline;}
+   
+.imgcenter{
+	display: block;   margin-left: auto;   margin-right: auto;}
+ 
+.equip{ 
+	margin-top:30px;}
+
+.eq{ 
+	float:left; min-width:200px; width:31%; margin: 10px; height:200px; text-align:center; box-sizing:border-box; 
+	border: 2px solid; border-color: white;box-shadow: 1px 1px 2px black, 0 0 20px white, 0 0 1px darkblue}
+
+.eq img{ 
+	padding:10px; box-sizing:border-box; align-items: center;  }
+
+.seq{
+	 height:180px;}
+		
+.imgcenter{
+	display: block;   margin-left: auto;   margin-right: auto}
+
+#backg{
+	background-color:black;background-image: linear-gradient(white,black,black,black,black,black,black,black,black,black,black,black,black,black,black,white,white,white)}
+
+#top{}

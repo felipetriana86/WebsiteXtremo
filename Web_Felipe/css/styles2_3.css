@@ -1,0 +1,30 @@
+#send{
+	
+	cursor: pointer;
+	
+}
+#reset{
+	
+	cursor: pointer;
+	float:right;
+	
+}
+#buttontable{
+	width:100%;
+}
+.rounded{
+	border: 1px solid black;
+	border-radius: 5px;	
+}
+#sec_login {
+	background-color:#ccffff;
+}
+#sec_product {
+	background-color:#99ffff;
+}
+#sec_user {
+	background-color:#00cccc;
+}
+#sec_submit {
+	background-color:#80ffcc;
+}

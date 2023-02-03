@@ -1,0 +1,21 @@
+table{
+	
+	border:3px solid blue;
+	border-right: red 3px solid;
+}
+
+th{
+	background-color:gray;
+	border: red 2px solid;
+}
+
+td {
+	border: 2px solid green;
+	border-bottom: 2px solid blue;
+	
+}
+#Egypt{
+	text-align:center;
+	color:red;
+	border-bottom: red 2px solid;
+}

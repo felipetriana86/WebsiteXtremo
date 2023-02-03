@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en">
+<head>
+<!-- FName LName
+     Description: 
+	 Date: 2021-00-00                  -->
+  <title>Top Page</title>
+<style type="text/css">
+h1 { text-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 5px darkblue; color:white}
+   h1::first-letter{ font-size: 120%;   color: darkred;}
+   label {color:white}
+   .logo {box-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 5px darkblue}
+ .box{	
+	float:left;	width:33.3%;text-align:center;box-sizing:border-box;}
+td{color:white}
+
+</style>
+  <script type="text/javascript" src="JS/login.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+		
+	</script>
+</head>
+
+<body onload="load()" style="background-image: url(./img/light_top.jpg);  background-repeat: no-repeat; height:120%; background-size: cover;">
+ <table border="0" width="99%">
+   <tr>
+    <td> <img class="logo" src="./img/Xlogo.jpg" alt="logo" style="width:130px; height:60px; "/> </td>
+    <td align="center" style="padding-left:100px"> <h1>Xtremo</h1> </td>
+    <td align="right"> 
+	<form name="form1">
+	 <table>
+	  <tr>
+	   <td class="login" style="color:white">User    :</td>
+	   <td class="login"><input type="text" name="firstname" id="user" size="15" maxlength="20" required>&nbsp;&nbsp;</td>
+	   <td class="login"><input type="button" id="b1" onClick="authenticate_login()" value="Login" /></td>
+	  </tr>
+	  
+	  <tr>
+	    <td colspan="3" class="logout"><span id="uname"></span></td>
+	  </tr>
+      
+	  <tr>
+       <td class="login" style="color:white">Password:</td>
+	   <td class="login"><input type="password" name="pwd" id="pwd" size="15" maxlength="20" required>&nbsp;&nbsp;</td>
+	   <td class="logout" style="white"><input type="button" id="b2" onClick="authenticate_logout()" value="Logout" /></td>
+	  
+	  <tr>
+     <br />
+	 </form>
+    </td>
+   </tr>
+</table>
+</body>
+
+</html>
